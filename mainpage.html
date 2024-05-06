@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"/>
+	<title>Q4Quiz1</title>
+<style>
+		body{
+			background-color: white;
+			background-image: url('https://i.pinimg.com/564x/7c/eb/23/7ceb23a8716c1d9d1e75b14ca388facc.jpg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		.navbar{
+			padding: 0;
+			font-family: Century Gothic;
+			font-size: 18px;
+		}
+		#topnav{
+			width: 70%;
+		}
+		.search-container{
+			width: 30%;
+		}
+		.search-input{
+			cursor: text;
+		}
+		.searchsub{
+			cursor: pointer;
+		}
+		#nav{
+			font-size: 23px;
+			font-family: TNR;
+			color: black;
+		}
+		#brand{
+			height: 70px;
+			width: 70px;
+		}
+		#sm{
+			height: 35px;
+			width: 35xpx;
+		}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-active">
+	<a class="navbar-brand" href="index.html"><img src="https://media.vogue.fr/photos/5fe9b40fced5335b1381259b/1:1/w_1079,h_1080,c_limit/133981900_786239275294424_670767697373137483_n.jpg" id="brand" class="rounded-circle"></a>
+
+	<div id="topnav">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" id="nav" href="page2.html">1st Quarter</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="nav" href="page3.html">2nd Quarter</a>
+			</li>
+		</ul>	
+	</div>
+
+	<div class="search-container">
+		<form>
+			<input type="search" placeholder="Search" name="search" class="searchinput">
+			<button type="submit" class="searchsub btn-success">Submit</button>
+		</form>
+	</div>
+	</nav>
+<center> 
+		<br> <br><br> <br><br> <br><br> <br>
+		<h1>This is my Online Portfolio!</h1>
+		<h2>Use the navigation bar above to view my 1st and 2nd Quarter outputs!</h2>
+
+		<a href="page2.html"> <p id="viewQ1"> </p> </a>
+		<a href="page3.html"> <p id="viewQ2"> </p> </a>
+
+		<script type="text/javascript">
+			function firstquarter(){
+				document.getElementById('viewQ1').innerHTML="View My 1st Quarter Project" // when clicked, the 1st Quarter Project will be visible
+			}
+			function secondquarter(){
+				document.getElementById('viewQ2').innerHTML="View My 2nd Quarter Project" // when clicked, the 2nd Quarter Project will be visible
+			}
+		</script>
+</center>
+</body>
+</html>
